@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { debounce } from "lodash"
+import debounce from "lodash.debounce";
 import { useAppDispatch } from '@/hooks/redux.ts';
 import { filtersActions } from '@/store/slices/FiltersSlice.ts';
 import { Input } from 'antd';

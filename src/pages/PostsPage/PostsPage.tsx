@@ -1,7 +1,7 @@
 import { Flex } from 'antd';
 import Filters from '@/components/Filters.tsx';
 import PostsList from '@/components/PostsList.tsx';
-import Pagination from '@/pages/Pagination.tsx';
+import Pagination from '@/components/Pagination.tsx';
 
 const PostsPage = () => {
 	return (

@@ -1,7 +1,6 @@
 import { useAppDispatch, useAppSelector } from '@/hooks/redux.ts';
 import { useEffect } from 'react';
 import { fetchPostById } from '@/store/services/fetchPostById.ts';
-import { toInteger } from 'lodash';
 import { Button, Divider, Result, Spin, Typography } from 'antd';
 import { useNavigate } from 'react-router-dom';
 const { Title } = Typography;
@@ -12,7 +11,7 @@ const PostDetails = ({ id }: { id: number }) => {
 	const { post, isLoading, error } = useAppSelector(state => state.postDetailsReducer)
 
 	useEffect(() => {
-		dispatch(fetchPostById(toInteger(id)))
+		dispatch(fetchPostById(id))
 	}, [dispatch, id])
 
 	return (
