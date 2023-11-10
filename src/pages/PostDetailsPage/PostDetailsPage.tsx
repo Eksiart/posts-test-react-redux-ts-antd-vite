@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import toInteger from 'lodash.toInteger';
+import toInteger from 'lodash/toInteger';
 import PostDetails from '@/components/PostDetails.tsx';
 import { Flex } from 'antd';
 
